@@ -2,6 +2,7 @@ package guia4;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Objects;
 
 import Enums.Genre;
 
@@ -60,7 +61,17 @@ public class Client {
 	public String toString() {
 		return "Client [name=" + name + ", tel=" + tel + ", rent=" + Arrays.toString(rent) + "]";
 	}
-	
-	
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Client client = (Client) o;
+		return Objects.equals(name, client.name) && Objects.equals(tel, client.tel);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, tel);
+	}
 }

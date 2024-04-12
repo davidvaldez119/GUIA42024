@@ -11,10 +11,11 @@ public class Film {
 	private Date relateDate;//fecha de lanzamiento
 	private Double duration; //duracion
 	private String Clasification;//clasificacion
-	
-	
-	
-	
+
+
+	public Film() {
+	}
+
 	public Film(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification) {
 		
 		this.gender = gender;
