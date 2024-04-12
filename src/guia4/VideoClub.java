@@ -16,13 +16,15 @@ private List<Film> arrayFilm=new ArrayList<Film>();
 
 
 
-public VideoClub(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification) {
-	super(gender, tytle, ncopy, relateDate, duration, clasification);
+
+public VideoClub(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification,
+		String name, Integer tel, Film[] rent) {
+	super(gender, tytle, ncopy, relateDate, duration, clasification, name, tel, rent);
 }
 
 public VideoClub(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification,
-		List<Client> arrayClients, List<Film> arrayFilm) {
-	super(gender, tytle, ncopy, relateDate, duration, clasification, clasification, ncopy, rent);
+		String name, Integer tel, Film[] rent, List<Client> arrayClients, List<Film> arrayFilm) {
+	super(gender, tytle, ncopy, relateDate, duration, clasification, name, tel, rent);
 	this.arrayClients = arrayClients;
 	this.arrayFilm = arrayFilm;
 }

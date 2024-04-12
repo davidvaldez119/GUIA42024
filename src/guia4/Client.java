@@ -5,8 +5,8 @@ import java.util.Date;
 
 import Enums.Genre;
 
-public class Client extends Film{
-	private static final Date Date = null;
+public class Client {
+	
 
 	private String name;//nombre
 	
@@ -20,7 +20,7 @@ public class Client extends Film{
 
 	public Client(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification,
 			String name, Integer tel, Film[] rent) {
-		super(Genre gender, String tytle, Integer ncopy, Date relateDate, Double duration, String clasification));
+		
 		this.name = name;
 		this.tel = tel;
 		this.rent = rent;
